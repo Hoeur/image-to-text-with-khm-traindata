@@ -59,7 +59,7 @@ tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 2. Run the script:
 
 ```sh
-python script.py
+python index.py
 ```
 
 3. Extracted text will be saved to `title.txt` and displayed in the console.
