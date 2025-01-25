@@ -4,7 +4,7 @@ from PIL import Image, ImageEnhance, ImageFilter
 tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Open the image
-image = Image.open('image.png')
+image = Image.open('img.png')
 
 # Convert the image to grayscale
 image = image.convert('L')
@@ -14,7 +14,7 @@ enhancer = ImageEnhance.Contrast(image)
 image = enhancer.enhance(2)
 
 # Apply a filter to sharpen the image
-image = image.filter(ImageFilter.SHAPEN)
+image = image.filter(ImageFilter.SHARPEN)
 
 # Save the preprocessed image (optional, for debugging purposes)
 image.save('preprocessed_image.png')
